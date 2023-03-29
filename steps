@@ -1,0 +1,5 @@
+1. Create an S3 bucket to store the website's static content, such as images, videos, and HTML files.
+2. Upload the static content to the S3 bucket.
+3. Create a CloudFront distribution for the S3 bucket. You can follow the steps provided in the AWS documentation to create a new CloudFront distribution, select the S3 bucket as the origin, and configure the distribution settings as desired.
+4. Create a new record set in Route 53 for the website's domain name, and configure it to point to the CloudFront distribution. You can follow the steps provided in the AWS documentation to create a new record set, select the CloudFront distribution as the value, and configure the record set settings as desired.
+5. Test the website by accessing the domain name in a web browser. You should be able to see the website's static content, which is being served through CloudFront from the S3 bucket.
